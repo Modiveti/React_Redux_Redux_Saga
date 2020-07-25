@@ -38,9 +38,10 @@ class Header extends React.Component {
                     src={appLogo}
                     alt="App Logo"
                     className="AppLogo"
+                    style={{ borderRadius: "20%"}}
                 />
-                <NavbarBrand style={{ color: "white", textAlign: "center", marginLeft: "38%" }}>
-                    StarWars
+                <NavbarBrand style={{ color: "white", textAlign: "center", marginLeft: "40%" }}>
+                    Sample react redux app
                 </NavbarBrand>
                 <div style={{ display: "flex", position: "absolute", right: "10px" }}>
                 <UserName

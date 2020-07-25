@@ -7,3 +7,16 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+
+// it block
+// get the component with specific key
+
+
+// s
+
+
+// make property ReadOnly
+
+// how to check if an element is supported by browser
+
