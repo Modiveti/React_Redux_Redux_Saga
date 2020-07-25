@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getLoginInfo } from '../../actions/loginAcctions';
 import { selectUserInputData } from '../../selectors/loginSelectors';
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { Button, Form, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import ReactLoading from "react-loading";
 
 import "./Login.css";
@@ -69,7 +69,7 @@ class Login extends Component {
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="userName" bsSize="large">
-            <ControlLabel>UserName</ControlLabel>
+            <FormLabel>UserName</FormLabel>
             <FormControl
               autoFocus
               value={this.state.userName}
@@ -77,7 +77,7 @@ class Login extends Component {
             />
           </FormGroup>
           <FormGroup controlId="password" bsSize="large">
-            <ControlLabel>Password</ControlLabel>
+            <FormLabel>Password</FormLabel>
             <FormControl
               value={this.state.password}
               onChange={this.handleChange}
